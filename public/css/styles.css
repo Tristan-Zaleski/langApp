@@ -20,6 +20,15 @@ body {
 h1 {
   text-align: center;
 }
+h2 {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+}
+
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -53,17 +62,33 @@ h1 {
 
 /* Style for front side (fallback if image is missing) */
 .flip-card-front {
+  border: 1px transparent;
+  border-radius: 10px;
   background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
   display: flex;
   align-items: center;
+  color: black;
   justify-content: center;
 }
 
 /* Style for back side */
 .flip-card-back {
+  border: 1px transparent;
+  border-radius: 10px;
   background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
   color: black;
   transform: rotateY(180deg);
+}
+
+.card_header {
+  display: inline-block;
+  border: 1px transparent;
+  border-radius: 10px;
+  background-color: #db2f23;
+  width: 25%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-padding {

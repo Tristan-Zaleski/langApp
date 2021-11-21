@@ -1,24 +1,27 @@
 <%- include("partials/header") -%>
 
 
-<h1>Spanish to English</h1>
+<h1>Learning a New Language</h1>
+<div class="grid">
 
 <% cards.forEach(function(card){ %>
-  <div class="flip-card">
+  <div class="flip-card g-col-6 g-col-md-4">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <h2><%= card.foreignW %></h2>
+        <div class="card_header">
+         <h2><%= card.foreignW %></h2>
+         </div>
       </div>
       <div class="flip-card-back">
           <div class="card_header">
             <h2><%= card.englishW %></h2>
           </div>
             <h3>Example Phrases:</h3>
-            <p><%= card.exampleP %></p>  
+            <p><%= card.exampleP %></p>
     </div>
    </div>
   </div>
-
+</div>
 <% }); %>
 
 
