@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 
+
 const uri = "mongodb://localhost:27017/langDB";
 mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
 
@@ -35,6 +36,7 @@ app.get("/", function(req,res){
     res.render("startV", {
       cards: cards
     });
+
   });
 });
 

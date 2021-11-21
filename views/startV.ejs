@@ -4,23 +4,19 @@
 <h1>Spanish to English</h1>
 
 <% cards.forEach(function(card){ %>
-  <div class="card">
-    <div class="card_inner">
-      <div class="card_face card_front">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
         <h2><%= card.foreignW %></h2>
       </div>
-      <div class="card_face card_back">
-        <div class="card_content">
+      <div class="flip-card-back">
           <div class="card_header">
             <h2><%= card.englishW %></h2>
           </div>
-          <div class="card_body">
             <h3>Example Phrases:</h3>
-            <p><%= card.exampleP %></p>
-          </div>
-        </div>
-      </div>
+            <p><%= card.exampleP %></p>  
     </div>
+   </div>
   </div>
 
 <% }); %>

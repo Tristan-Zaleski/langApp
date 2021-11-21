@@ -20,56 +20,54 @@ body {
 h1 {
   text-align: center;
 }
-
-.card {
-  margin: 100px auto 0;
-  width: 400px;
-  height: 600px;
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
-.card_inner {
+/* needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 1s;
+  text-align: center;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
 }
 
-.footer-padding {
-	padding-bottom: 60px;
-}
-
-.card_inner.is-flipped {
+/* horizontal flip on hover */
+.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.card_face {
+/* Position for front and back side */
+.flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  overflow: hidden;
-  border-radius: 16;
-  box-shadow: 0px 3px 18px 3px rgba(0,0,0,0.2);
 }
 
-.card_front {
+/* Style for front side (fallback if image is missing) */
+.flip-card-front {
   background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.card_front h2 {
-  color: var(--dark);
-  font-size: 40px;
+/* Style for back side */
+.flip-card-back {
+  background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+  color: black;
+  transform: rotateY(180deg);
 }
 
-.card_back {
-  background-color: var(--light);
-  transform: rotateY(180deg);
+.footer-padding {
+	padding-bottom: 60px;
 }
 
 .footer {
