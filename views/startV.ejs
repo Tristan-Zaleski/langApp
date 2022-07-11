@@ -2,19 +2,19 @@
 
 
 <h1>Learning a New Language</h1>
-<div class="grid">
+<div class="grid g-col-6 g-col-md-4">
 
 <% cards.forEach(function(card){ %>
-  <div class="flip-card g-col-6 g-col-md-4">
+  <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
         <div class="card_header">
-         <h2><%= card.foreignW %></h2>
+         <h1><%= card.foreignW %></h1>
          </div>
       </div>
       <div class="flip-card-back">
           <div class="card_header">
-            <h2><%= card.englishW %></h2>
+            <h1><%= card.englishW %></h1>
           </div>
             <h3>Example Phrases:</h3>
             <p><%= card.exampleP %></p>
