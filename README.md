@@ -13,11 +13,15 @@ at default port 27017 pointed at a DB named langDB. Once database is up and runn
 can be used to host the backend, and new cards can be created to populate the site.
 
 For Windows:
+```
 $ mongod
 $ nodemon app.js
+```
 
 For macOS/Linux:
+```
 $ brew services start mongodb/brew/mongodb-community@5.0
 $ nodemon app.js
+```
 
 Should report success on port 3000. Can visit at localhost:3000 on a browser.
