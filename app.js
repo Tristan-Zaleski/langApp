@@ -5,10 +5,11 @@ const ejs = require("ejs");
 const mongoose = require("mongoose");
 
 // CONNECTION TO DB/BACKEND
+//const uri = "mongodb+srv://BRiNK:BRiNK@cluster0.37kbk.mongodb.net/?retryWrites=true&w=majority"
 const uri = "mongodb://localhost:27017/langDB";
 mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
 
-// CONSTRUCTION OF EXPRESS.JS APP
+// CONSTRUCTION OF EXPRESS.JS APPs
 const app = express();
 
 // SCHEMA DECLARATION FOR INFO TO GO IN DB

@@ -27,6 +27,7 @@ h2 {
 
 .grid {
   width: 100%;
+  justify-content: center;
   /* display: grid; */
   /* grid-template-columns: repeat(3, 1fr); */
   display: inline-flex;
