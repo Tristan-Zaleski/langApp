@@ -27,7 +27,7 @@ h2 {
 
 .grid {
   width: 100%;
-  justify-content: center;
+  justify-content: center; /* Has new rows spawning in center and filling screen up to 4 now */
   /* display: grid; */
   /* grid-template-columns: repeat(3, 1fr); */
   display: inline-flex;
