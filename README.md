@@ -7,6 +7,7 @@ Everything Required:
 - npm (Win) or brew (Mac) for package management
 - Node JS for hosting website (I use nodemon in example)
 - MongoDB Community Server for hosting data
+- Git installed on your system to clone repo (if you prefer)
 
 Once cloned, app can be run as long as their is an active mongoDB running on the local machine
 at default port 27017 pointed at a server with DB named langDB. Once database is up and running fully, node
