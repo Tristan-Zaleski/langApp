@@ -9,7 +9,7 @@ Everything Required:
 - MongoDB Community Server for hosting data
 
 Once cloned, app can be run as long as their is an active mongoDB running on the local machine
-at default port 27017 pointed at a DB named langDB. Once database is up and running fully, node
+at default port 27017 pointed at a server with DB named langDB. Once database is up and running fully, node
 can be used to host the backend, and new cards can be created to populate the site.
 
 For Windows:
