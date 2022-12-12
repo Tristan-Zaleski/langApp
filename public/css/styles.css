@@ -26,12 +26,11 @@ h2 {
 }
 
 .grid {
-  width: 100%;
-  /* display: grid; */
-  /* grid-template-columns: repeat(3, 1fr); */
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  /* display: inline-flex;
+  flex-wrap: wrap; */
 }
 
 .flip-card {
