@@ -98,6 +98,11 @@ h2 {
   margin: 0;
 }
 
+.header {
+  position: fixed;
+  background-color: #e03814;
+}
+
 .footer {
 	position: fixed;
 	text-align: center;
